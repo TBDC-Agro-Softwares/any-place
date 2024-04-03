@@ -1,0 +1,15 @@
+import { App } from 'vue';
+import InfoWindow from './components/InfoWindow.vue';
+import Map from './components/MapComponent.vue';
+import Polygon from './components/PolygonComponent.vue';
+import Marker from './components/MarkerComponent.vue';
+import Autocomplete from './components/MapAutocompleteComponent.vue';
+import loadGoogleMapsApi from './manager/initializer';
+import MapElementMixin from './mixins/mapElement';
+import MapElementFactory from './factories/mapElement';
+import MountableMixin from './mixins/mountable';
+import { OptionsTbdcGoogleMaps } from './utils/config';
+declare const Cluster: (() => Promise<unknown>) | undefined;
+export { loadGoogleMapsApi, Marker, Polygon, Cluster, InfoWindow, Map, MapElementMixin, MapElementFactory, Autocomplete, MountableMixin };
+export default function install(app: App, options?: OptionsTbdcGoogleMaps): void;
+export declare function googleMapsApi(): any;

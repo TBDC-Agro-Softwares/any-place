@@ -1,0 +1,25 @@
+.DS_Store
+node_modules
+bin
+
+# local env files
+.env
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+.npmrc
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+demo.html
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
